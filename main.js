@@ -85,14 +85,12 @@ function buildBoard() {
     for (var i = 0; i < gLevels[0].SIZE; i++) {
         board.push([]);
         for (var j = 0; j < gLevels[0].SIZE; j++) {
-
+            board[i][j] = '';
             board[i][j] = gMineField.pop();
         }
     }
 
-    for (var i = 0; i < gMineField.length; i++) {
-        board
-    }
+
     board[0][0] = MINE;
     board[3][2] = MINE;
     board[2][2] = MINE;
