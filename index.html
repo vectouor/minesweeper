@@ -9,21 +9,24 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body onload="initGame()">
-    <!-- <div style="background-image: url('img/mines.jpg');"> -->
-    <h1>Minesweeper</h1>
-    <h2>Timer:</h2>
+<body oncontextmenu="return false" ; onload=" initGame() ">
+    <h1 onclick="resetGame()">Minesweeper 🙂</h1>
 
-    <div class="game">
-        <table border=1>
-            <tbody class="board">
-
+    <div class="levels"></div>
+    <div class="timer">0.00</div>
+    <div class="game ">
+        <table class="center" border=1>
+            <tbody class="board ">
             </tbody>
         </table>
     </div>
-    <!-- </div> -->
-    <script src="js/utils.js"></script>
-    <script src="js/main.js"></script>
-</body>
+
+    <div class="hint">
+        <p>Hints:3</p>
+        <button onclick="showHint()">Hint</button>
+    </div>
+    <script src="js/utils.js "></script>
+    <script src="js/main.js "></script>
+    </body oncontextmenu="return false;>
 
 </html>

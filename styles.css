@@ -1,32 +1,52 @@
 /* notes */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
-    text-align: center;
+    background-color: grey;
+}
+
+h1,
+.levels,
+.timer,
+.game,
+.reset,
+button.level {
+    border-radius: 7px;
 }
 
 h1 {
     text-align: center;
+    color: cornsilk;
+    padding: 10px;
+    margin: 5px auto;
+    background-color: #1C4745;
+    cursor: pointer;
 }
 
 table {
     padding: 5px;
-    text-align: center;
     margin: 5px;
     table-layout: fixed;
     border-radius: 5px;
+    background-color: rgb(97, 96, 96);
 }
 
 td {
     padding: 10px;
+    background-color: rgb(191, 206, 151);
 }
 
 .board td {
     width: 50px;
     height: 50px;
-    text-align: center;
     border-radius: 5px;
+    align-content: center;
+}
+
+.game {
+    background-color: #FF9F52;
+    padding: 10px;
 }
 
 .revealed.hidden {
@@ -38,9 +58,49 @@ td {
 }
 
 .timer {
-    display: inline;
+    background-color: #EFC458;
+    padding: 10px;
+    margin: 5px auto;
+    display: block;
 }
 
-.mark {
-    background-color: lightpink
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button.level {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.levels {
+    background-color: #17A899;
+    text-align: center;
+}
+
+.marked {
+    box-shadow: 10px 10px 5px grey;
+}
+
+.hint {
+    margin: 5px auto;
+    text-align: center;
+    background-color: #F66747;
+    padding: 10px;
+}
+
+.hint button {
+    margin: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.hint p {
+    margin: 5px;
+}
+
+.open {
+    background-color: white;
 }
